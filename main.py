@@ -17,6 +17,7 @@ except Exception:
             return pickle.load(f)
 
 model = load_model("student_model.pkl")
+features = load_model("features.pkl")
 
 
 @app.post("/predict")
